@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'e-commerce';
+  mostrar: boolean;
+
+  constructor(){
+    this.mostrar = false;
+  }
+
+  ngOnInit(): void {
+
+  }
+
+  mostrarNav() {
+    this.mostrar = true;
+  }
+  
 }
