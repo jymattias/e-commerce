@@ -1,0 +1,35 @@
+
+<h1>Registro</h1>
+
+<form [formGroup]="form">
+    <div style="margin: auto; width: 60%;">
+        <div class="form-group full-width-input">
+            <label>Nombre Completo: *</label>
+            <input class="form-control" formControlName="nombre" required>
+        </div>
+        <div class="form-group full-width-input">
+            <label>Email: *</label>
+            <input class="form-control" type="email" formControlName="email" required>
+        </div>
+        <div class="form-group full-width-input">
+            <label>Password: *</label>
+            <input class="form-control" type="password" formControlName="password" required>
+        </div>
+        <div class="form-group full-width-input">
+            <label>Telefono: </label>
+            <input class="form-control" formControlName="telefono">
+        </div>
+        <div class="form-group full-width-input">
+            <label>Domicilio: </label>
+            <input class="form-control" formControlName="domicilio">
+        </div>
+        <div class="form-group full-width-input">
+            <label>Codigo Postal: </label>
+            <input class="form-control" formControlName="codigoPostal">
+        </div>        
+    </div>
+</form>
+
+<div style="text-align: center; margin: 50px;">
+    <button class="btn btn-primary" (click)="AddUser()">Crear Cuenta</button>
+</div>
